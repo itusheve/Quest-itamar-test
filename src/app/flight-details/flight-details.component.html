@@ -1,0 +1,20 @@
+<div class="flight-details">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <label>Plane Number&nbsp;</label>
+            <label>{{flight.plane}}</label>
+        </li>
+        <li class="list-group-item">
+            <label>Duration&nbsp;</label>
+            <label>{{flight.duration | time}}</label>
+        </li>
+        <li class="list-group-item">
+            <label>Origin Gate&nbsp;</label>
+            <label>{{flight.from_gate}}</label>
+        </li>
+        <li class="list-group-item">
+            <label>Destination Gate&nbsp;</label>
+            <label>{{flight.to_gate}}</label>
+        </li>
+      </ul>
+</div>

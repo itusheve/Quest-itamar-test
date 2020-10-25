@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+  <app-workers [workers]="workers" (onSelect)="updateFlights($event)"></app-workers>
+  </div>
+  <div class="col-sm" *ngIf="workerFlights.length>0">
+  <app-flights [flights]="workerFlights" (onSelectFlight)="getFlightDetails($event)"></app-flights>
+</div>
+<div class="col-sm" *ngIf="flightDetail">
+  <app-flight-details [flight]="flightDetail"></app-flight-details>
+</div>
+</div>

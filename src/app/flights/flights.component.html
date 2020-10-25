@@ -1,0 +1,22 @@
+<div class="worker-flights">
+    <table class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Flight Number</th>
+            <th scope="col">Origin</th>
+            <th scope="col">Origin Date</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Destination Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let flight of flights" (click)="onSelect(flight)">
+            <th scope="row">{{flight.num}}</th>
+            <td>{{flight.from}}</td>
+            <td>{{flight.from_date}}</td>
+            <td>{{flight.to}}</td>
+            <td>{{flight.to_date}}</td>
+          </tr>            
+        </tbody>
+      </table>
+</div>

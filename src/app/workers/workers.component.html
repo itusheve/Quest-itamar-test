@@ -1,0 +1,7 @@
+<div class="workers">
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-action" *ngFor="let worker of workers" [ngClass]="{'active':worker.isActive}" (click)="selectWorker(worker)">
+            {{worker.name}}
+            </li>
+      </ul>
+</div>
